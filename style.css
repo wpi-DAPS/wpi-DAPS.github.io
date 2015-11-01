@@ -1,21 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-	/*background-color:#001A3E;*/
-	
-}
+	body {
+		margin:0 auto;
+		background-color:#083366;
+		}
+		container{
+			margin:0 auto;
+			width:900px;
+			background-color:#FFF;
+			display:block;
+		}
 header {
 	background-color:#FFFFFF;
 	margin: 0 auto;
 	width: 900px;
 }
 footer {
-	background-color:#FFFFFF;
-	margin: 0 auto;
-	width: 900px;
-}
-container {
 	background-color:#FFFFFF;
 	margin: 0 auto;
 	width: 900px;
