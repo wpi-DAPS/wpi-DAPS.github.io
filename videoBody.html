@@ -4,92 +4,113 @@
 		<title>
 			Video Body
 		</title>
+        <style>
+		#videos{
+			width:800px;
+			padding: 0;	
+		}
+		</style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"/> </script>
+        <script type="text/javascript">
+		window.onload = (function(){
+			var array = ["5tLooPlf2Sw", "MxPb3z76uAY", "btDd9rOlc2k", "1ZRb1we80kM", "AAbokV76tkU", "AAbokV76tkU"];
+			for (var i = 0; i < array.length; i++) {
+				var imgid = "http://img.youtube.com/vi/" + array[i] + "/0.jpg";
+				var vidid = "https://www.youtube.com/watch?v=" + array[i];
+				$("#videos").append("<a href=" + vidid + " target='_blank'> <img src=" + imgid + " width='150px'> </a>");
+				//document.getElementById("videos").innerHTML = "<a href=" + vidid + "> <img src=" + imgid + "> </a>"
+			}
+		});
+		</script>
 	</head>
 	<body>
 		<container>
-			<table>
+			<!--<table width="900">
 				<tr>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=5tLooPlf2Sw">
+							<img src="http://img.youtube.com/vi/5tLooPlf2Sw/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=MxPb3z76uAY">
+							<img src="http://img.youtube.com/vi/MxPb3z76uAY/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=mrwnL62HObI">
+							<img src="http://img.youtube.com/vi/mrwnL62HObI/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=1ZRb1we80kM">
+							<img src="http://img.youtube.com/vi/1ZRb1we80kM/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=AAbokV76tkU">
+							<img src="http://img.youtube.com/vi/AAbokV76tkU/0.jpg" width="150">
 						</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=BVwAVbKYYeM">
+							<img src="http://img.youtube.com/vi/BVwAVbKYYeM/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=C8T6771Sdj8">
+							<img src="http://img.youtube.com/vi/C8T6771Sdj8/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=t3ULhmadHkg">
+							<img src="http://img.youtube.com/vi/t3ULhmadHkg/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=Mq-aVCUs2Q0">
+							<img src="http://img.youtube.com/vi/Mq-aVCUs2Q0/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=1qnV55LUFVM">
+							<img src="http://img.youtube.com/vi/1qnV55LUFVM/0.jpg" width="150">
 						</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=bagj78IQ3l0">
+							<img src="http://img.youtube.com/vi/bagj78IQ3l0/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=rJnICByeL8Q">
+							<img src="http://img.youtube.com/vi/rJnICByeL8Q/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=UJfZ69MSlvY">
+							<img src="http://img.youtube.com/vi/UJfZ69MSlvY/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=btDd9rOlc2k">
+							<img src="http://img.youtube.com/vi/btDd9rOlc2k/0.jpg" width="150">
 						</a>
 					</td>
 					<td>
-						<a href="http://c.xkcd.com/random/comic/">
-							<img src="./images/panda.jpg" width="150">
+						<a href="https://www.youtube.com/watch?v=btDd9rOlc2k">
+							<img src="http://img.youtube.com/vi/btDd9rOlc2k/0.jpg" width="150">
 						</a>
 					</td>
 				</tr>
 			</table>
-		</container>
+		</container>-->
+        <div id="videos">
+        <p> Videos </p>
+        </div>
 	</body>
 </html>
