@@ -6,12 +6,7 @@
 			Contact
 		</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<style>
-	
-		#contact{
-			background-color:#8ABDFF;	
-		}
-		</style>
+		
 		<!-- Include jQuery -->
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<!-- Include Header and Footer -->
@@ -21,6 +16,13 @@
 				$("#header").load("header.html");
 				$("#footer").load("footer.html");
 				$("#body").load("contactBody.html");
+				document.getElementById("home").className = "";
+				document.getElementById("project").className = "";
+				document.getElementById("doc").className = "";
+				document.getElementById("med").className = "";
+				document.getElementById("people").className = "";
+				document.getElementById("contact").className = "currentpage";
+				
 			});
 		</script>
 	</head>
