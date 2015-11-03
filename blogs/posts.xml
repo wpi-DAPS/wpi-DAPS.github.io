@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<November>
+	<post>
+		<title>Welcome</title>
+		<author>Jacob Zizmor</author>
+		<date>2015-11-1</date>
+		<content>
+			Hello! We are the Dynamic Adjustable Prosthetic Socket team from <a href="http://www.wpi.edu">Worcester Polytechnic Institute</a>. We are developing a lower-limb prosthetic socket to reduce strain on the wearer's residual limb and reduce excess energy put forth by the wearer. You can find a more detailed description on the <a href="http://www.wpi-daps.github.io/projects.html">projects</a> page.
+			So far, we have completed 7 weeks of our project. These first 7 weeks were spent researching, designing, and prototyping. One topic of the first 7 weeks of our work has been about EMG sensors. We have researched and tested locations to place EMG sensors to aquire the most accurate and representative signals. Additionally, we have worked to create appropriate electrical filters for the EMG signals to reduce noise and ease analysis.
+			We will also be using a custom designed PCB board for our project. We've been designing our own schematic to use and we'll be placing our order soon.
+			Our project is based on hydraulics. We've designed our hydraulic system and will begin testing soon.
+			Part of the hydraulic system will be hydraulic bladders, which we will also be designing ourselves. So far, we've prototyped several different iterations of bladders focusing on different materials, sealing methods, and shapes.
+			In order to control the entire system, we will be using an embedded microcontroller. The software has been outlined and being written now.
+		</content>
+	</post>
+</November>
