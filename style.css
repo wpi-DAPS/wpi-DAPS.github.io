@@ -1,16 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
-	body {
-		margin:0 auto;
-		
-		}
-		container{
-			margin:0 auto;
-			width:900px;
-			background-color:#FFF;
-			display:block;
-		}
+body {
+	margin:0 auto;
+}
+#body {
+	margin:0 auto;	
+}
+container{
+	margin:0 auto;
+	width:900px;
+	background-color:#FFF;
+	display:block;
+}
 header {
 	background-color:#FFFFFF;
 	margin: 0 auto;
