@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="yes"?>
-<November>
+
 	<post>
 		<title>Welcome</title>
 		<author>Jacob Zizmor</author>
@@ -13,4 +13,3 @@
 			In order to control the entire system, we will be using an embedded microcontroller. The software has been outlined and being written now.
 		</content>
 	</post>
-</November>
