@@ -23,11 +23,14 @@
 
  $(document).ready(function()
       {
-        $.get('posts.xml', function(d){
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+				
+        $.get('posts.xml', function(data){
         $('#body').append('<h1> Project Posts </h1>');
         $('#body').append('<dl />');
  
-        $(d).find('post').each(function(){
+        $(data).find('post').each(function(){
  
             var $post = $(this); 
         //    var title = $post.attr("title");
@@ -50,17 +53,7 @@
     });
 });
 </script>
-	<!-- Include Header and Footer -->
-	<!-- Script (1) -->
-	<script>
-	$(function(){
-		$("#header").load("header.html");
-		$("#footer").load("footer.html");
-	//	$("#body").load("homeBody.html");
-		
-				
-	});
-	</script>
+
 </head>
 <body>
 	<div id="header"></div>
