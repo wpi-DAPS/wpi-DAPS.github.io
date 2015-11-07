@@ -13,12 +13,13 @@ container{
 	display:block;
 }
 header {
-	background-color:#FFFFFF;
+	/*background-color:#FFFFFF;*/
+	background-color: purple;
 	margin: 0 auto;
 	width: 900px;
 }
 footer {
-	background-color:#FFFFFF;
+	/*background-color:#FFFFFF;*/
 	margin: 0 auto;
 	width: 900px;
 }
