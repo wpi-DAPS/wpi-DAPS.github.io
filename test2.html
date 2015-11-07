@@ -5,13 +5,14 @@
 
  $(document).ready(function()
       {
-        $.get('posts.xml', function(d){
-        $('body').append('<h1> Project Posts </h1>');
-        $('body').append('<dl />');
- 
-        $(d).find('post').each(function(){
- 
-            var $post = $(this); 
+        $(document).ready(function(){
+		$.ajax({
+  		type: "GET",
+  		url: "posts.xml", 
+  		dataType: "xml",
+  		success: function(xml) {	
+   	$(xml).find('post').each(function(){
+                var $post = $(this); 
         //    var title = $post.attr("title");
 		var title = $post.find('title').text();
 		var author = $post.find('author').text();
