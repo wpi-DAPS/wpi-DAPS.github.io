@@ -9,12 +9,11 @@ container{
 	margin:0 auto;
 	width:900px;
 	/*background-color:#FFF;*/
-	background-color: purple;
+	/*background-color: purple;*/
 	display:block;
 }
 header {
 	/*background-color:#FFFFFF;*/
-	background-color: purple;
 	margin: 0 auto;
 	width: 900px;
 }
@@ -24,5 +23,5 @@ footer {
 	width: 900px;
 }
 h1 {
-	background-color: purple;
+	/*background-color: purple;*/
 }
