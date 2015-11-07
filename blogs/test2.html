@@ -1,0 +1,49 @@
+-<!DOCTYPE html>
+-<html>
+-<body>
+-
+-<posthere> 
+-<table id="posts">
+-
+-
+-
+-</table>
+-</posthere>
+-
+-
+-<!-- HTML Comment: This script must be after the table where the XML data will be displayed -->
+-<script>
+-	function loadXMLDoc() {
+-	  var xmlhttp = new XMLHttpRequest();
+-	  xmlhttp.onreadystatechange = function() {
+-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+-		  postDAPS(xmlhttp);
+-		}
+-	  }
+-	  xmlhttp.open("GET", "posts.xml" , true);
+-	  xmlhttp.send();
+-	}
+-
+-	function postDAPS(xml) {
+-	  var x, i, xmlDoc, table;
+-	  xmlDoc = xml.responseXML;
+-	  table = "";
+-	  x = xmlDoc.getElementsByTagName("post") //selects all of our posts
+-	  for (i = 0; i < x.length; i++) { 
+-		table += "<tr><td>" + 
+-		x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+-		"</td></tr> <tr><td>" +
+-		x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
+-		"</td></tr> <tr><td>" +
+-		x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue +
+-		"</td></tr> <tr><td>" +
+-		x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue +
+-		"</td></tr> <p></p>";
+-	  }
+-	  document.getElementById("posts").innerHTML = table;
+-	}
+-	window.onload = loadXMLDoc();
+-</script>
+-
+-</body>
+-</html>
