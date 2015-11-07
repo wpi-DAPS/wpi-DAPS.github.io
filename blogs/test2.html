@@ -12,9 +12,10 @@
         $(d).find('post').each(function(){
  
             var $post = $(this); 
-            var title = $post.attr("title");
-			var author = $post.attr("author");
-			var date = $post.attr("date");			
+        //    var title = $post.attr("title");
+		var title = $post.find('title').text();
+		var author = $post.find('author').text();
+		var date = $post.find('date').text();
             var content = $post.find('content').text();
             //var imageurl = $book.attr('imageurl');
  
