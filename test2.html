@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+ $(document).ready(function()
+      {
+        $.get('posts.xml', function(d){
+        $('body').append('<h1> Project Posts </h1>');
+        $('body').append('<dl />');
+ 
+        $(d).find('post').each(function(){
+ 
+            var $post = $(this); 
+        //    var title = $post.attr("title");
+		var title = $post.find('title').text();
+		var author = $post.find('author').text();
+		var date = $post.find('date').text();
+            var content = $post.find('content').text();
+            //var imageurl = $book.attr('imageurl');
+ 
+            //var html = '<dt> <img class="bookImage" alt="" src="' + imageurl + '" /> </dt>';
+            var html = '<dd> <strong>' + title + '</strong></p>';
+			    html += '<p> ' + author + " &nbsp; &nbsp;   " + date + '</p>' ;
+            html += '<p> ' + content + '</p>' ;
+            html += '</dd>';
+ 
+            $('dl').append($(html));
+             
+            //$('.loadingPic').fadeOut(1400);
+        });
+    });
+});
+</script>
 <body>
 
-<posthere> 
-<table id="posts">
 
 
 
-</table>
-</posthere>
 
-
-<!-- HTML Comment: This script must be after the table where the XML data will be displayed -->
-<script>
-	function loadXMLDoc() {
-	  var xmlhttp = new XMLHttpRequest();
-	  xmlhttp.onreadystatechange = function() {
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-		  postDAPS(xmlhttp);
-		}
-	  }
-	  xmlhttp.open("GET", "posts.xml" , true);
-	  xmlhttp.send();
-	}
-
-	function postDAPS(xml) {
-	  var x, i, xmlDoc, table;
-	  xmlDoc = xml.responseXML;
-	  table = "";
-	  x = xmlDoc.getElementsByTagName("post") //selects all of our posts
-	  for (i = 0; i < x.length; i++) { 
-		table += "<tr><td>" + 
-		x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-		"</td></tr> <tr><td>" +
-		x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
-		"</td></tr> <tr><td>" +
-		x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue +
-		"</td></tr> <tr><td>" +
-		x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue +
-		"</td></tr> <p></p>";
-	  }
-	  document.getElementById("posts").innerHTML = table;
-	}
-	window.onload = loadXMLDoc();
-</script>
 
 </body>
 </html>
