@@ -14,7 +14,7 @@
 
 
   var i;
-  var xmlDoc = xml.responseXML;
+  var xmlDoc = xmlhttp.responseXML;
   var x = xmlDoc.getElementsByTagName("post");
   for (i = 0; i <x.length; i++) { 
  		var title =  x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue
