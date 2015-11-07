@@ -21,37 +21,29 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 
- $(document).ready(function()
-      {
-		$("#header").load("header.html");
+
+		
+        $(document).ready(function(){
+        	$("#header").load("header.html");
 		$("#footer").load("footer.html");
-				
-        $.get('posts.xml', function(data){
-        $('#body').append('<h1> Project Posts </h1>');
-        $('#body').append('<dl />');
- 
-        $(data).find('post').each(function(){
- 
-            var $post = $(this); 
-        //    var title = $post.attr("title");
-		var title = $post.find('title').text();
-		var author = $post.find('author').text();
-		var date = $post.find('date').text();
-            var content = $post.find('content').text();
-            //var imageurl = $book.attr('imageurl');
- 
-            //var html = '<dt> <img class="bookImage" alt="" src="' + imageurl + '" /> </dt>';
+		$.get("posts.xml", function(data) {
+		var $xml = $(data);	
+		$xml.find('post').each(function(){
+                var $post = $(this); 
+				var title = $post.find('title').text();
+				var author = $post.find('author').text();
+				var date = $post.find('date').text();
+            	var content = $post.find('content').text();
             var html = '<dd> <strong>' + title + '</strong></p>';
-			    html += '<p> ' + author + " &nbsp; &nbsp;   " + date + '</p>' ;
-            html += '<p> ' + content + '</p>' ;
-            html += '</dd>';
+			    html += '<p> ' + author + ' &nbsp; &nbsp; ' + date + '</p>' ;
+            	html += '<p> ' + content + '</p>' ;
+            	html += '</dd>';
  
-            $('dl').append($(html));
-             
-            //$('.loadingPic').fadeOut(1400);
+            	$('#body').append($(html));
+		});
+		});
         });
-    });
-});
+
 </script>
 
 </head>
