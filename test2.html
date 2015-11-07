@@ -11,10 +11,10 @@
   }
   xmlhttp.open("GET", "posts.xml", true);
   xmlhttp.send();
-
-
+});
+function myFunction(xml){
   var i;
-  var xmlDoc = xmlhttp.responseXML;
+  var xmlDoc = xml.responseXML;
   var x = xmlDoc.getElementsByTagName("post");
   for (i = 0; i <x.length; i++) { 
  		var title =  x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue
@@ -27,8 +27,8 @@
            	html += '</dd>';
   
   }
-  document.getElementById("posts").innerHTML = html;
-});
+  document.getElementById("body").innerHTML = html;
+}
  //$(document).ready(function()
  //     {
  //       $(document).ready(function(){
