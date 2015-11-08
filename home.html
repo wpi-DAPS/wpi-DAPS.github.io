@@ -25,6 +25,7 @@
 		
         $(document).ready(function(){
         	$("#header").load("header.html");
+        	$("#footerBreak").load("footer_break.html");
 		$("#footer").load("footer.html");
 		$.get("posts.xml", function(data) {
 		var $xml = $(data);	
@@ -51,6 +52,7 @@
 	<container>
 	<div id="header"></div>
 	<div id="body"> <p> &nbsp; </p><h2> Project Posts </h2> </div>
+	<div id="footerBreak"></div>
 	<div id="footer"></div>
 	</container>
 </body>
