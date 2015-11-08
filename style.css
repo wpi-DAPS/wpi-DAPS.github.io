@@ -7,9 +7,11 @@ body {
 }
 container{
 	margin:0 auto;
-	width:960px;
+	width:940px;
 	display:block;
 	background-color: white;
+	padding-right:10px;
+	padding-left:10px;
 }
 header {
 	margin: 0 auto;
