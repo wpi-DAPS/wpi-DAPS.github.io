@@ -7,7 +7,7 @@ body {
 }
 container{
 	margin:0 auto;
-	width:900px;
+	width:960px;
 	display:block;
 	background-color: white;
 	padding-left: 10px;
@@ -15,10 +15,14 @@ container{
 }
 header {
 	margin: 0 auto;
-	width: 900px;
+	width:960px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 footer {
 	margin: 0 auto;
-	width: 900px;
+	width: 960px;
 	background-color: white;
+	padding-left: 10px;
+	padding-right: 10px;
 }
