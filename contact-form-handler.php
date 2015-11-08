@@ -1,51 +1,32 @@
-\<?php 
-$errors = '';
-$myemail = 'dapsmqp@wpi.edu';//<-----Put Your email address here.
-if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
-   empty($_POST['msg']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['msg']; 
-
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-
-if( empty($errors))
-{
-	$to = $myemail; 
-	$email_subject = "WPI-MQP Contact Form Submission $name";
-	$email_body = "Someone made a submission online.".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
-	
-	$headers = "From: $myemail\n"; 
-	$headers .= "Reply-To: $email_address";
-	
-	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-	header('Location: contact-form-thank-you.html');
-} 
-?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html>
-<head>
-	<title>Contact form handler</title>
-</head>
-
-<body>
-<!-- This page is displayed only if there is some error -->
 <?php
-echo nl2br($errors);
+$field_name = $_POST['cf_name'];
+$field_email = $_POST['cf_email'];
+$field_message = $_POST['cf_message'];
+
+$mail_to = 'daps@wpi.edu';
+$subject = 'WPI MQP Contact Form Submission '.$field_name;
+
+$body_message = 'From: '.$field_name."\n";
+$body_message .= 'E-mail: '.$field_email."\n";
+$body_message .= 'Message: '.$field_message;
+
+$headers = 'From: '.$field_email."\r\n";
+$headers .= 'Reply-To: '.$field_email."\r\n";
+
+$mail_status = mail($mail_to, $subject, $body_message, $headers);
+
+if ($mail_status) { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Thank you for the message. We will contact you shortly.');
+		window.location = 'contact_page.html';
+	</script>
+<?php
+}
+else { ?>
+	<script language="javascript" type="text/javascript">
+		alert('Message failed. Please, send an email to gordon@template-help.com');
+		window.location = 'contact_page.html';
+	</script>
+<?php
+}
 ?>
-
-
-</body>
-</html>
