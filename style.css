@@ -11,6 +11,10 @@ container{
 	display:block;
 	background-color: white;
 	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+}
+containerIN {
+	padding-left: 10px;
 	padding-right: 10px;
 }
 header {
