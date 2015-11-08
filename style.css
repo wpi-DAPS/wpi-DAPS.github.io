@@ -3,12 +3,13 @@
 
 body {
 	margin:0 auto;
-	background-color: rgb(245, 255, 255);
+	background-color: purple;
 }
 container{
 	margin:0 auto;
 	width:900px;
 	display:block;
+	background-color: white;
 }
 header {
 	margin: 0 auto;
