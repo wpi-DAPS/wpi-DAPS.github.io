@@ -11,20 +11,19 @@ container{
 	display:block;
 	background-color: white;
 	padding-left: 10px;
-	padding-right: 10px;
 }
 header {
 	margin: 0 auto;
 	width:960px;
 	padding-left: 10px;
-	padding-right: 10px;
+
 }
 footer {
 	margin: 0 auto;
 	width: 960px;
 	background-color: white;
 	padding-left: 10px;
-	padding-right: 10px;
+
 }
 #footerbreak{
 	width: 960px;
