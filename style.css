@@ -31,4 +31,16 @@ footer {
 	width:1000px;
 	background-color: #FFF;
 }
+#header {
+	padding-right: 10px;
+	padding-left:10px;
+	width:1000px;
+	background-color: #FFF;
+}
+#footer {
+	padding-right: 10px;
+	padding-left:10px;
+	width:1000px;
+	background-color: #FFF;
+}
 }
