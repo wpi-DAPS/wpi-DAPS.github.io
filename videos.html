@@ -6,7 +6,7 @@
 		Videos
 	</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-    <style>
+	<style>
 		
 		#med{
 			background-color:#8ABDFF;	
@@ -19,34 +19,34 @@
 
 		#container > div {font-size: 1rem; display: inline-block; }
 		
-		</style>
+	</style>
 	<!-- Include jQuery -->
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<!-- Include Header and Footer -->
 	<!-- Script (1) -->
 	<script>
-	$(function(){
-		$("#header").load("header.html");
-		$("#footer").load("footer.html");
-		$("#footerBreak").load("footer_break.html");
+		$(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+			$("#footerBreak").load("footer_break.html");
 		// $("#body").load("videoBody.html");
 	});
 	</script>
 
 	<style>
-	#videos{
-		width:800px;
-		padding: 0;	
-	}
+		#videos{
+			width:800px;
+			padding: 0;	
+		}
 	</style>
 	<script src="//code.jquery.com/jquery-1.10.2.js"/> </script>
 	<script type="text/javascript">
-	window.onload = (function(){
-		var array = ["rnZDRUh2bcM","pOZcPukQi9w", "VKUoRtp6juE", "R4u2xa6CeAQ", "NXBUePmQFcQ"];
-		for (var i = 0; i < array.length; i++) {
-			var imgid = "http://img.youtube.com/vi/" + array[i] + "/0.jpg";
-			var vidid = "https://www.youtube.com/watch?v=" + array[i];
-			$("#videos").append("<a href=" + vidid + " target='_blank'> <img src=" + imgid + " width='200px'> </a>");
+		window.onload = (function(){
+			var array = ["rnZDRUh2bcM","pOZcPukQi9w", "VKUoRtp6juE", "R4u2xa6CeAQ", "NXBUePmQFcQ"];
+			for (var i = 0; i < array.length; i++) {
+				var imgid = "http://img.youtube.com/vi/" + array[i] + "/0.jpg";
+				var vidid = "https://www.youtube.com/watch?v=" + array[i];
+				$("#videos").append("<a href=" + vidid + " target='_blank'> <img src=" + imgid + " width='200px'> </a>");
 				//document.getElementById("videos").innerHTML = "<a href=" + vidid + "> <img src=" + imgid + "> </a>"
 			}
 		});
@@ -54,20 +54,20 @@
 </head>
 <body>
 	<container id ="container">
-	<div id="header"></div>
+		<div id="header"></div>
 
-	<container>
-		<h2>Videos</h2>
-		<div id="videos" align="center">
+		<container>
+			<h2>Videos</h2>
+			<div id="videos" align="center">
+				<br>
+				<!-- http://www.youtube.com/yt/brand/using-logo.html -->
+			</div>
 			<br>
-			<!-- http://www.youtube.com/yt/brand/using-logo.html -->
-		</div>
-		<br>
-		<!-- <a href="https://www.youtube.com/channel/UCsJW_DngbwnUXdb1BVQIHeg" target="_blank"><img src="./images/YouTube48.png" width="35" hspace="18" vspace="18"></a> -->
-	</container>
-	
-	<div id="footerBreak"></div>
-	<div id="footer"></div>
+			<!-- <a href="https://www.youtube.com/channel/UCsJW_DngbwnUXdb1BVQIHeg" target="_blank"><img src="./images/YouTube48.png" width="35" hspace="18" vspace="18"></a> -->
+		</container>
+		
+		<div id="footerBreak"></div>
+		<div id="footer"></div>
 	</container>
 </body>
 </html>
