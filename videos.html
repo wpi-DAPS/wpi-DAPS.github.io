@@ -18,7 +18,10 @@
 		#container {   font-size: 0; }
 
 		#container > div {font-size: 1rem; display: inline-block; }
-		
+		#videos{
+			width:800px;
+			padding: 0;	
+		}
 	</style>
 	<!-- Include jQuery -->
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -33,12 +36,7 @@
 	});
 	</script>
 
-	<style>
-		#videos{
-			width:800px;
-			padding: 0;	
-		}
-	</style>
+
 	<script src="//code.jquery.com/jquery-1.10.2.js"/> </script>
 	<script type="text/javascript">
 		window.onload = (function(){
@@ -53,10 +51,10 @@
 	</script>
 </head>
 <body>
-	<container>
+	<container id="container">
 		<div id="header"></div>
 
-		<container id="container">
+		<container>
 			<h2>Videos</h2>
 			<div id="videos" align="center">
 				<br>
