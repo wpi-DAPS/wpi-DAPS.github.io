@@ -2,6 +2,15 @@
 
 <posts>	
 <post>
+		<title>Gathering EMG Signal Data</title>
+		<author>Mollie Myers</author>
+		<date>2015-11-20</date>
+		<content>
+			On November 13, we went to the Rec Center to gather some EMG data. This data is being used to further develop our algorithm to determine the user state. For the first test, subject 1 (Meghan) walked approximately 8 yards, then stopped, and turned around. She repeated this several times. During this we were measuring activity on the rectus femoris muscle which was found from using <a href="http://www.rehab.research.va.gov/jour/2013/504/images/pantall504f01lb.jpg">this diagram</a> as well as palpation. She also did the same thing but running. The final test with that muscle group was standing up from a sitting position and sitting down from a standing position. We performed the same tests with adductor magnus and the biceps femoris. We used a Bitalino to collect the data. So far we are very excited it seems like we can pretty confidently determine the difference in user activity, but more information is coming soon!  
+		</content>
+
+</post>
+<post>
 		<title>PUL Bladder Testing</title>
 		<author>Joshua Friscia</author>
 		<date>2015-11-11</date>
