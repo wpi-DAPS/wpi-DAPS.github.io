@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<posts>	
+<posts>
+	<post>
+		<title>Intel-Cornell Cup Semi-Finals</title>
+		<author>Jacob Zizmor</author>
+		<date>2015-11-23</date>
+		<content>
+			We recently received the news that we have been accepted into the semi-finals of the Intel-Cornell Cup! As a team and as individuals, we are all very excited for this opportunity. The Intel-Cornell Cup brings new excitement and a new challenge to our project. As part of being selected to be semi-finalists, we are being sent an Intel Atom processor along with various peripherals to utilize all of its capabilities. We are very thankful to the group at the Intel-Cornell Cup for this opportunity.
+		</content>
+	</post>
 <post>
 		<title>Gathering EMG Signal Data</title>
 		<author>Mollie Myers</author>
