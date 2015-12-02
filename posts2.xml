@@ -6,10 +6,13 @@
 		<author>Jacob Zizmor</author>
 		<date>2015-12-02</date>
 		<content>
-			<html><a href="https://www.flickr.com/photos/136065649@N05/23367989512/">https://www.flickr.com/photos/136065649@N05/23367989512/</a></html>
-<xlink xlink:type="simple" xlink:href="https://www.flickr.com/photos/136065649@N05/23367989512/">Visit W3Schools</xlink>
+			<![CDATA[
+				<html><a href="https://www.flickr.com/photos/136065649@N05/23367989512/">https://www.flickr.com/photos/136065649@N05/23367989512/</a></html>
+			]]>
+
 		</content>
 	</post>
+	
 	<post>
 		<title>First Motor</title>
 		<author>Joshua Friscia</author>
@@ -26,28 +29,28 @@
 			We recently received the news that we have been accepted into the semi-finals of the Intel-Cornell Cup! As a team and as individuals, we are all very excited for this opportunity. The Intel-Cornell Cup brings new excitement and a new challenge to our project. As part of being selected to be semi-finalists, we are being sent an Intel Atom processor along with various peripherals to utilize all of its capabilities. We are very thankful to the group at the Intel-Cornell Cup for this opportunity.
 		</content>
 	</post>
-<post>
+	<post>
 		<title>Gathering EMG Signal Data</title>
 		<author>Mollie Myers</author>
 		<date>2015-11-20</date>
 		<content>
-On November 13, we went to the Rec Center to gather some EMG data. This data is being used to further develop our algorithm to determine the user state. For the first test, subject 1 (Meagan) walked approximately 8 yards, then stopped, and turned around. She repeated this several times. During this we were measuring activity on the rectus femoris muscle which was found from using <html><![CDATA[ <a href="http://www.rehab.research.va.gov/jour/2013/504/images/pantall504f01lb.jpg" target="_blank"> this diagram</a>]]></html> as well as palpation. She also did the same thing but running. The final test with that muscle group was standing up from a sitting position and sitting down from a standing position. We performed the same tests with adductor magnus and the biceps femoris. We used a Bitalino to collect the data. So far we are very excited it seems like we can pretty confidently determine the difference in user activity, but more information is coming soon!
+			On November 13, we went to the Rec Center to gather some EMG data. This data is being used to further develop our algorithm to determine the user state. For the first test, subject 1 (Meagan) walked approximately 8 yards, then stopped, and turned around. She repeated this several times. During this we were measuring activity on the rectus femoris muscle which was found from using <html><![CDATA[ <a href="http://www.rehab.research.va.gov/jour/2013/504/images/pantall504f01lb.jpg" target="_blank"> this diagram</a>]]></html> as well as palpation. She also did the same thing but running. The final test with that muscle group was standing up from a sitting position and sitting down from a standing position. We performed the same tests with adductor magnus and the biceps femoris. We used a Bitalino to collect the data. So far we are very excited it seems like we can pretty confidently determine the difference in user activity, but more information is coming soon!
 		</content>
 
-</post>
-<post>
+	</post>
+	<post>
 		<title>PUL Bladder Testing</title>
 		<author>Joshua Friscia</author>
 		<date>2015-11-11</date>
 		<content>
 			In our final attempt at prototyping bladders, we used Polyurethane Laminate (PUL) sealed with flowable sealant. The PUL is a realtively stretchy material compared to vinyl and when we pressurized it, the PUL began to slowly leak around the seams.
-As a result, we were unable to collect max pressure data from the PUL bladders. 
-One takeaways from testing the PUL were that flowable sealant forms a more watertight bond, provided that it has several days to dry.
-The PUL is also a more comfortable fabric compared to vinyl, and might be useful in creating the lining or attachment for the vinyl bladders to the socket. The PUL could be turned into a liner with several pocket to house the vinly bladders in. This would also provide some extra protection from leaks if the vinyl bladders fail.
+			As a result, we were unable to collect max pressure data from the PUL bladders. 
+			One takeaways from testing the PUL were that flowable sealant forms a more watertight bond, provided that it has several days to dry.
+			The PUL is also a more comfortable fabric compared to vinyl, and might be useful in creating the lining or attachment for the vinyl bladders to the socket. The PUL could be turned into a liner with several pocket to house the vinly bladders in. This would also provide some extra protection from leaks if the vinyl bladders fail.
 		</content>
 
-</post>
-<post>
+	</post>
+	<post>
 		<title>Weekly Update</title>
 		<author>Meagan Hiatt</author>
 		<date>2015-11-07</date>
@@ -55,8 +58,8 @@ The PUL is also a more comfortable fabric compared to vinyl, and might be useful
 			This week we are finishing up the PCB (Printed Circuit Board) design and are planning to submit an order this Monday. Altium Designer is being used to design the board. All of the components, such as the microcontroller, motor drivers and EMG filtering circuits have been designed and their parts ordered.
 		</content>
 
-</post>
-<post>
+	</post>
+	<post>
 		<title>Welcome</title>
 		<author>Jacob Zizmor</author>
 		<date>2015-11-01</date>
@@ -69,4 +72,4 @@ The PUL is also a more comfortable fabric compared to vinyl, and might be useful
 			In order to control the entire system, we will be using an embedded microcontroller. The software has been outlined and being written now.
 		</content>
 	</post>
-	</posts>
+</posts>
