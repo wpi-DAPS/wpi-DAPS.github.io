@@ -6,7 +6,7 @@
 		<author>Jacob Zizmor</author>
 		<date>2015-12-02</date>
 		<content>
-			<html><![CDATA[ <a href="https://www.flickr.com/photos/136065649@N05/23367989512/">https://www.flickr.com/photos/136065649@N05/23367989512/</a>]]</html>
+			<html><a href="https://www.flickr.com/photos/136065649@N05/23367989512/">https://www.flickr.com/photos/136065649@N05/23367989512/</a></html>
 		</content>
 	</post>
 	<post>
@@ -14,7 +14,7 @@
 		<author>Joshua Friscia</author>
 		<date>2015-12-02</date>
 		<content>
-			Recently our first motor arrived in the mail. We'll be using <html><![CDATA[ <a href="http://www.firgelli.com/Uploads/P16_DATASHEET_12JUN2015.pdf">Firgelli P16 linear actuators</a>]]</html> to control the hydraulic action of our syringes. The actuator has a Max lift Force of 50N, a backdrive force of 75N, and a stroke length of 150mm.  These specs provide us with enough force inflate the bladders, counteracting the force the user's limb applies to the bladders and ensuring the motor won't get backdriven. More to come on testing the actuator and hydraulic system.
+			Recently our first motor arrived in the mail. We'll be using <html><a href="https://www.flickr.com/photos/136065649@N05/23367989512/">https://www.flickr.com/photos/136065649@N05/23367989512/</a></html> to control the hydraulic action of our syringes. The actuator has a Max lift Force of 50N, a backdrive force of 75N, and a stroke length of 150mm.  These specs provide us with enough force inflate the bladders, counteracting the force the user's limb applies to the bladders and ensuring the motor won't get backdriven. More to come on testing the actuator and hydraulic system.
 		</content>
 	</post>
 	<post>
