@@ -2,73 +2,73 @@
 <html>
 <!-- Head section -->
 <head>
-	<title>
-		Home
-	</title>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<style>
-		container{
-			width:980px;
-			background-color:#FFF;
-		}
-		#container {   font-size: 0; }
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+        container{
+            width:980px;
+            background-color:#FFF;
+        }
+        #container {   font-size: 0; }
 
-		#container > div {font-size: 1rem; display: inline-block; }
-		
-	</style>
-	<!-- Include jQuery -->
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script>
+        #container > div {font-size: 1rem; display: inline-block; }
+        
+    </style>
+    <!-- Include jQuery -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
 
 
-		
-		$(document).ready(function(){
-			$("#header").load("header.html");
-			$("#footerBreak").load("footer_break.html");
-			$("#footer").load("footer.html");
-			$.get("posts.xml", function(data) {
-				var $xml = $(data);	
-				$xml.find('post').each(function(){
-					var $post = $(this); 
-					var title = $post.find('title').text();
-					var author = $post.find('author').text();
-					var date = $post.find('date').text();
-					var content = $post.find('content').text();
-					var html = '<dd> <strong>' + title + '</strong></p>';
-					html += '<p> ' + author + ' &nbsp; &nbsp; ' + date + '</p>' ;
-					html += '<p> ' + content + '</p>' ;
-					html += '</dd><br/>';
-					
-					$('#body').append($(html));
-				});
-			});
-		});
+        
+        $(document).ready(function(){
+            $("#header").load("header.html");
+            $("#footerBreak").load("footer_break.html");
+            $("#footer").load("footer.html");
+            $.get("posts.xml", function(data) {
+                var $xml = $(data); 
+                $xml.find('post').each(function(){
+                    var $post = $(this); 
+                    var title = $post.find('title').text();
+                    var author = $post.find('author').text();
+                    var date = $post.find('date').text();
+                    var content = $post.find('content').text();
+                    var html = '<dd> <strong>' + title + '</strong></p>';
+                    html += '<p> ' + author + ' &nbsp; &nbsp; ' + date + '</p>' ;
+                    html += '<p> ' + content + '</p>' ;
+                    html += '</dd><br/>';
+                    
+                    $('#body').append($(html));
+                });
+            });
+        });
 
-	</script>
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71665469-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
 
 </head>
 <body>
-	<container id ="container">
-		<div id="header"></div>
-		<div id="body" style="padding-left:12px; padding-right:25;"> 
-			<p> &nbsp; </p>
-			<h2>    Project Posts </h2> 
-		</div>
-		<div id="footerBreak"></div>
-		<div id="footer"></div>
-	</container>
+    <container id ="container">
+        <div id="header"></div>
+        <div id="body" style="padding-left:12px; padding-right:25;"> 
+            <p> &nbsp; </p>
+            <h2>    Project Posts </h2> 
+        </div>
+        <div id="footerBreak"></div>
+        <div id="footer"></div>
+    </container>
 </body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71665469-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </html>
