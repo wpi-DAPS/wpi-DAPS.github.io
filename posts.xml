@@ -10,6 +10,25 @@
 		</content>
 	</post>
 	<post>
+		<title>It Works!</title>
+		<author>Meagan Hiatt</author>
+		<date>2016-2-16</date>
+		<content>
+			One of our biggest tests was done today - programming the microcontroller to properly run the motors drivers, which would in turn would control the motors so they could push the syringes to inflate/deflate the bladders and stop when the pressure sensors reached a certain reading. And it worked! 
+				<![CDATA[
+				<html><a href="https://www.youtube.com/watch?v=-JsBajxfJ7w" target="_blank">these</a>You can see our video here!</html>
+			]]>
+		</content>
+	</post>
+	<post>
+		<title>Intel-Cornell Cup Finals!</title>
+		<author>Meagan Hiatt</author>
+		<date>2016-2-17</date>
+		<content>
+			Today we found out that we are now finalists in the Intel-Cornell Cup!!!
+		</content>
+	</post>
+	<post>
 		<title>Sewing with EMG electrodes!</title>
 		<author>Mollie Myers</author>
 		<date>2016-1-15</date>
