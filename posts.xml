@@ -16,7 +16,7 @@
 		<content>
 			One of our biggest tests was done today - programming the microcontroller to properly run the motors drivers, which would in turn would control the motors so they could push the syringes to inflate/deflate the bladders and stop when the pressure sensors reached a certain reading. And it worked! 
 				<![CDATA[
-				<html><a href="https://www.youtube.com/watch?v=-JsBajxfJ7w" target="_blank">these</a>You can see our video here!</html>
+				<html><a href="https://www.youtube.com/watch?v=-JsBajxfJ7w" target="_blank">You can see our video here!</a></html>
 			]]>
 		</content>
 	</post>
